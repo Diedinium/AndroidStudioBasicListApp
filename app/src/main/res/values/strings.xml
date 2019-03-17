@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Basic List App</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="name">Name</string>
+    <string name="content_desc_list_items">Images for the list items.</string>
+
+    <string-array name="items">
+        <item>Purchase 1</item>
+        <item>Purchase 2</item>
+        <item>Purchase 3</item>
+        <item>Purchase 4</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>£0.99</item>
+        <item>£1.49</item>
+        <item>£3.49</item>
+        <item>£0.79</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>This is the first purchase</item>
+        <item>This is the second purchase</item>
+        <item>This is the third purchase</item>
+        <item>This is the fourth purchase</item>
+    </string-array>
+
+    <string-array name="pictureDescriptions">
+        <item>This purchase is an RJ11 plug.</item>
+        <item>This purchase is a Fibre optic cable.</item>
+        <item>This purchase is a USB type C cable.</item>
+        <item>This purchase is a RJ45 plug.</item>
+    </string-array>
+
+</resources>
