@@ -15,6 +15,7 @@ public class detailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        //Finds the ID of the description.
         TextView pictureDescriptionTextView = findViewById(R.id.pictureDescTextView);
 
         //Get the intent that ran this activity
@@ -30,6 +31,7 @@ public class detailActivity extends AppCompatActivity {
             ImageView img = findViewById(R.id.imageView);
             //Scale the image by passing it into scaleImg with the ID of the ImageView (img) and the picture to be processed (pic)
             scaleImg(img, pic);
+            //Sets the text of the description using the setDescription function.
             pictureDescriptionTextView.setText(setDescription(index));
         }
     }
@@ -45,9 +47,11 @@ public class detailActivity extends AppCompatActivity {
             default: return -1;
         }
     }
-
+    //Method which returns the appropriate description based on the index value
     private String setDescription(int index) {
+        //Finds the string array.
         String array[] = getResources().getStringArray(R.array.pictureDescriptions);
+        //Returns the appropriate description from array.
         switch (index) {
             case 0: return array[0];
             case 1: return array[1];
